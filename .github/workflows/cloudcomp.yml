@@ -1,4 +1,4 @@
-name: Chrome Remote Desktop
+name: Chrome Remote Desktop1
 
 on: 
   workflow_dispatch:
