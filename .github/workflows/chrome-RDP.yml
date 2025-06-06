@@ -12,7 +12,7 @@ on:
   
 jobs:
   build:
-    runs-on: Windows-2025
+    runs-on: Windows-11-arm
 
     steps:
     - uses: actions/checkout@v2
