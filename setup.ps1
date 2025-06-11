@@ -28,6 +28,6 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/in
 
 # Установка программ через Chocolatey
 Write-Host "[+] Установка программ через Chocolatey..."
-choco install 7zip winrar opera vscode sysinternals -y
+choco install 7zip winrar opera vscode sysinternals notepadplusplus -y
 
 Write-Host "[✓] Готово."
