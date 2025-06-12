@@ -20,14 +20,4 @@ Start-Process -FilePath $chrome -ArgumentList "/silent /install" -Wait
 Remove-Item -Path $chrome -Force
 Write-Host "Chrome установлен."
 
-# Быстрая установка Chocolatey без проверок
-Write-Host "[+] Установка Chocolatey..."
-Set-ExecutionPolicy Bypass -Scope Process -Force
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-
-# Установка программ через Chocolatey
-Write-Host "[+] Установка программ через Chocolatey..."
-choco install 7zip winrar opera vscode notepadplusplus -y
-
 Write-Host "[✓] Готово."
